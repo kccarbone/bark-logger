@@ -15,4 +15,5 @@ yarn-debug.log*
 
 # Build outputs
 build/
+out/
 *.tgz

@@ -1,9 +1,9 @@
 {
   "name": "bark-logger",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Simple log framework for browser and server",
-  "main": "build/index.js",
-  "types": "build/index.d.ts",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
     "start": "tsc -w",
     "test": "tsc && jest build/tests/*",
