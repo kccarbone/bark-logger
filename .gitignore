@@ -1,0 +1,17 @@
+# Dependencies
+node_modules/
+
+# Cache
+.cache
+.npm
+.eslintcache
+*.tsbuildinfo
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Build outputs
+build/
+*.tgz
