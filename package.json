@@ -1,6 +1,6 @@
 {
   "name": "bark-logger",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Simple log framework for browser and server",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",

@@ -25,7 +25,7 @@ jobs:
           mkdir -p out/lib
           cp package.json out/
           cp LICENSE out/
-          cp -r build/src/ out/lib/
+          cp -r build/src/* out/lib/
           npm pack out/
       - name: Publish to npm
         id: publish
