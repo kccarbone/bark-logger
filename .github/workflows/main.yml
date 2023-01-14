@@ -32,6 +32,7 @@ jobs:
         uses: JS-DevTools/npm-publish@v1
         with:
           check-version: true
+          package: ./out/package.json
           token: ${{ secrets.NPM_TOKEN }}
       - name: Publish GitHub release
         uses: softprops/action-gh-release@v1
