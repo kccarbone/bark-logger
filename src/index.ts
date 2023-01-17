@@ -3,11 +3,11 @@ import config from './config';
 
 const loggers: { [name: string]: Logger } = {};
 
-class Logger {
+export class Logger {
   readonly _name: string;
 
-  constructor(name: string) {
-    this._name = name ?? '';
+  constructor(name = 'main') {
+    this._name = name;
   }
 
   trace = (msg: string) => this.log(msg, Levels.TRACE);

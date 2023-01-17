@@ -1,14 +1,16 @@
 {
   "name": "bark-logger",
-  "version": "0.0.5",
+  "version": "1.0.0",
   "description": "Simple log framework for browser and server",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
-    "start": "tsc -w",
-    "test": "tsc && jest build/tests/*",
     "build": "tsc",
-    "clean": "rm -rf build/ out/"
+    "local": "tsc -w",
+    "test": "tsc && jest build/tests/*",
+    "clean": "rm -rf build/ out/",
+    "link": "tsc && mkdir -p out/lib && cp package.json out/ && cp -r build/src/* out/lib/ && cd out/ && npm link",
+    "prerelease": "rm -rf build/ out/ && tsc && mkdir -p out/lib && cp package.json out/ && cp LICENSE out/ && cp -r build/src/* out/lib/ && npm publish --tag next out/"
   },
   "repository": {
     "type": "git",

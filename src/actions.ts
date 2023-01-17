@@ -18,7 +18,7 @@ const printToConsole: LogAction = (timestamp: Date, level: Levels, name: string,
   const timeString = `${two(timestamp.getHours())}:${two(timestamp.getMinutes())}:${two(timestamp.getSeconds())}`;
 
   console.log(''
-    + style(`[${timeString}] `, (color.accent ?? 37).toString())
+    + style(`[${timeString}] `, (color.accent ?? 39).toString())
     + style(`${color.label}`, color.fg.toString(), color.bg.toString())
     + style((name ? ` (${name}) ` : ' '), (color.accent ?? 90).toString())
     + style(`${message}`, '39', '49')

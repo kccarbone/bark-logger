@@ -1,10 +1,10 @@
 import { jest, describe, expect, test } from '@jest/globals';
 
 // Import library
-import { getLogger, Levels, config } from '../src/index';
+import { Logger, Levels, getLogger, config } from '../src/index';
 
 // Create logger
-const logger = getLogger();
+const logger = new Logger();
 
 // Configure mocks
 const mockAction = jest.fn().mockName('mockAction');
