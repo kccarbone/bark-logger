@@ -17,3 +17,6 @@ yarn-debug.log*
 build/
 out/
 *.tgz
+
+# Misc
+.DS_Store
